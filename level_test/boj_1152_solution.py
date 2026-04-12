@@ -2,8 +2,11 @@ import sys
 import argparse
 
 def main():
+    """
+    이 해법은 parser 사용법과 input 을 그대로 사용하는 방법 2가지가 모두 포함된 방법임
+    """
     parser = argparse.ArgumentParser(
-        description="범용 NMAPE 개선 분석 보고서 생성 스크립트"
+        description="arguments 사용"
     )
 
     parser.add_argument(
