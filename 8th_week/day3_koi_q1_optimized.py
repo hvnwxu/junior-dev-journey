@@ -20,3 +20,16 @@ X.sort(key=lambda x: x[0])
 #    종이에 예제를 직접 써가며 언제 break하고 언제 세는지 순서를 잡아봐!
 for i in range(N):
     j = i + 1
+    while j < N:
+        if X[j][0] - X[i][0] > K2:
+            break
+        if K1 <= abs(X[j][1] - X[i][1]) <= K2:
+            print(X[i][2] + 1, X[j][2] + 1, end=' ')
+    
+for i in range(N):
+    j = i - 1
+    while j >= 0:
+        if X[i][0] - X[j][0] > K2:
+            break
+        if K1 <= abs(X[j][1] - X[i][1]) <= K2:
+            print(X[j][2] + 1, X[i][2] + 1, end=' ')

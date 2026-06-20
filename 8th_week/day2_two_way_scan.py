@@ -6,7 +6,7 @@ count = 0
 j = i - 1
 while j >= 0:
     if scores[j] < 80:   # 80점 미만이면?
-        break            # 어떻게 해야 할까?
+        continue            # 어떻게 해야 할까?
     count += 1
     j -= 1
 
@@ -14,7 +14,7 @@ while j >= 0:
 j = i + 1
 while j < len(scores):
     if scores[j] < 80: # 80점 미만이면?
-        break            # 어떻게 해야 할까?
+        continue         # 어떻게 해야 할까?
     count += 1
     j += 1
 
