@@ -1,7 +1,7 @@
 N = int(input())
 cnt = 0
 for i in range(1, N + 1):
-    if N // 3 == 0:
+    if i % 3 == 0:
         cnt += 1
         # ⚠️ [핵심 버그] N // 3 이 아니라 i % 3 == 0 이어야 할 것 같아!
         #
